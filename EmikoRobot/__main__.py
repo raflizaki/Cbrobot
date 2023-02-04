@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *👋🏻 ʜᴇʟʟᴏ {} *
-ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴢᴏɪᴅ [✨](https://telegra.ph/file/e49a96b35cc9d4dc8a213.jpg)
+ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴢᴏɪᴅs [✨](https://telegra.ph/file/ff77c532845fb916f44cd.jpg)
 ᴍᴇ ɪꜱ ᴀ ʙᴏᴛ ᴍᴀɴᴀɢᴇʀ + ᴍᴜꜱɪᴄ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡᴇʟʟ.
 ────────────────────────
 × `{}` *ᴜꜱᴇʀꜱ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*
@@ -103,13 +103,13 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴢᴏɪᴅ", url=f"t.me/{bu}?startgroup=new"),
+            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴢᴏɪᴅs", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
 
 HELP_STRINGS = """
-Klik tombol di bawah ini untuk mendapatkan deskripsi tentang fitur manage bot Zoid.
+Klik tombol di bawah ini untuk mendapatkan deskripsi tentang fitur manage bot Zoids.
 
 ✪ /start : Mulai Aku!! ✨
 ✪ /help : Perintah Untuk Membantu Anda
@@ -426,7 +426,7 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Zoid support chats*"
+            text="*๏ Zoids support chats*"
             f"\nJoin My Support Group/Channel for see or report a problem on {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
