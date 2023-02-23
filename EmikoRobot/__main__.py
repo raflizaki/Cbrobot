@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *👋🏻 ʜᴇʟʟᴏ {} *
-ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴢᴏɪᴅs [✨](https://telegra.ph/file/ff77c532845fb916f44cd.jpg)
+𝑀𝑌 𝑁𝐴𝑀𝐸 𝐼𝑆 𝑅𝐴𝑀𝐵𝐸𝐿 [✨](https://telegra.ph/file/fe73013dd30cbec4d9f50.jpg)
 ᴍᴇ ɪꜱ ᴀ ʙᴏᴛ ᴍᴀɴᴀɢᴇʀ + ᴍᴜꜱɪᴄ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡᴇʟʟ.
 ────────────────────────
 × `{}` *ᴜꜱᴇʀꜱ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*
@@ -93,23 +93,23 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ᴢᴏɪᴅ", callback_data="emiko_"),
+        InlineKeyboardButton(text="🇮🇩𝙰𝙱𝙾𝚄𝚃 𝚁𝙰𝙼𝙱𝙴𝙻🇮🇩", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
         InlineKeyboardButton(
-            text="ɪɴʟɪɴᴇ​​", switch_inline_query_current_chat=""
+            text="↪️ɪɴʟɪɴᴇ​​↩️", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴢᴏɪᴅs", url=f"t.me/{bu}?startgroup=new"),
+            text="𝚃𝙰𝙼𝙱𝙰𝙷𝙺𝙰𝙽 𝚁𝙰𝙼𝙱𝙴𝙻", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
 
 HELP_STRINGS = """
-Klik tombol di bawah ini untuk mendapatkan deskripsi tentang fitur manage bot Zoids.
+Klik tombol di bawah ini untuk mendapatkan deskripsi tentang fitur manage bot 𝚁𝙰𝙼𝙱𝙴𝙻.
 
 ✪ /start : Mulai Aku!! ✨
 ✪ /help : Perintah Untuk Membantu Anda
@@ -379,18 +379,15 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴀᴅᴍɪɴ", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="ɴᴏᴛᴇs", callback_data="emiko_notes"),
+                    InlineKeyboardButton(text="✴️ᴀᴅᴍɪɴ✴️", callback_data="emiko_admin"),
+                    InlineKeyboardButton(text="❌ɴᴏᴛᴇs❌", callback_data="emiko_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛ", callback_data="emiko_credit"),
+                    InlineKeyboardButton(text="🇮🇩sᴜᴘᴘᴏʀᴛ🇮🇩", callback_data="emiko_support"),
+                    InlineKeyboardButton(text="☠️ ᴅᴇᴠᴇʟᴏᴩᴇʀ☠️", url="https://t.me/yahkamukepo2"),
                  ],
                  [
-                    InlineKeyboardButton(text="sᴏᴜʀᴄᴇ  ᴄᴏᴅᴇ", url="https://github.com"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="source_back"),
+                    InlineKeyboardButton(text="↪️ʙᴀᴄᴋ↩️", callback_data="source_back"),
                  ]
                 ]
             ),
@@ -426,17 +423,17 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Zoids support chats*"
+            text="*๏ 𝚁𝙰𝙼𝙱𝙴𝙻 support chats*"
             f"\nJoin My Support Group/Channel for see or report a problem on {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/ZoidsXRobotLog"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/ImZo_0"),
+                    InlineKeyboardButton(text="🤙sᴜᴘᴘᴏʀᴛ🤙", url="t.me/pantekyks"),
+                    InlineKeyboardButton(text="👷ᴜᴘᴅᴀᴛᴇs👷", url="https://t.me/gabutanbabyoo"),
                  ],
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="emiko_"),
+                    InlineKeyboardButton(text="↪️ʙᴀᴄᴋ↩️", callback_data="emiko_"),
                  
                  ]
                 ]
@@ -498,7 +495,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="emiko_")
+                    InlineKeyboardButton(text="↪️ʙᴀᴄᴋ↩️", callback_data="emiko_")
                  ]
                 ]
             ),
@@ -569,7 +566,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="↪️ʙᴀᴄᴋ↩️", callback_data="help_back")]]
             ),
         )
 
