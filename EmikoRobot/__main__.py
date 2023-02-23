@@ -96,7 +96,7 @@ buttons = [
         InlineKeyboardButton(text="🇮🇩𝙰𝙱𝙾𝚄𝚃 𝚁𝙰𝙼𝙱𝙴𝙻🇮🇩", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
+        InlineKeyboardButton(text="🏁ʜᴇʟᴘ🏁", callback_data="help_back"),
         InlineKeyboardButton(
             text="↪️ɪɴʟɪɴᴇ​​↩️", switch_inline_query_current_chat=""
         ),
