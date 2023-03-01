@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *👋🏻 ʜᴇʟʟᴏ {} *
-𝑀𝑌 𝑁𝐴𝑀𝐸 𝐼𝑆 𝑅𝐴𝑀𝐵𝐸𝐿 [✨](https://telegra.ph/file/fe73013dd30cbec4d9f50.jpg)
+[🇮🇩](https://telegra.ph/file/fe73013dd30cbec4d9f50.jpg)
 ᴍᴇ ɪꜱ ᴀ ʙᴏᴛ ᴍᴀɴᴀɢᴇʀ + ᴍᴜꜱɪᴄ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡᴇʟʟ
 ────────────────────────
 🇮🇩 *Uptime:* `{}`
@@ -385,7 +385,7 @@ def emiko_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="🇮🇩sᴜᴘᴘᴏʀᴛ🇮🇩", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="☠️ ᴅᴇᴠᴇʟᴏᴩᴇʀ☠️", url="https://t.me/yahkamukepo2"),
+                    InlineKeyboardButton(text="☠️ ᴅᴇᴠᴇʟᴏᴩᴇʀ☠️", url="https://t.me/quntulharam"),
                  ],
                  [
                     InlineKeyboardButton(text="↪️ʙᴀᴄᴋ↩️", callback_data="source_back"),
